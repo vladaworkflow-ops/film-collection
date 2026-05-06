@@ -1,0 +1,54 @@
+.card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+      }
+
+      img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 16px;
+      margin: 6px 0;
+    }
+
+    p {
+      margin: 2px 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .favorite {
+      display: inline-block;
+      cursor: pointer;
+    }
+    .favorite input {
+      display: none;
+    }
+    .favorite .heart::before {
+      content: "♡";
+      font-size: 20px;
+      color: #aaa;
+      transition: 0.2s;
+    }
+
+    .favorite input:checked + .heart::before {
+      content: "❤️";
+      color: red;
+    }
+
+    .favorite:hover .heart::before {
+      transform: scale(1.1);
+    }
