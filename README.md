@@ -32,7 +32,7 @@ Its "Film Collection" — a small movie catalog application using mock data. The
 
 ### 1. Clone repository
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
+git clone https://github.com/vladaworkflow-ops/film-collection.git
 cd <repo-name>
 ```
 
@@ -50,5 +50,18 @@ ng serve
 ## Open in browser
 
 ```bash
-http://localhost:
+http://localhost:4200
 ```
+
+## Completed Technical Requirements
+
+- Renders film list
+  -  Film card accepts data via input()
+  -  Film list is rendered using @for
+- Add routes
+  - At least 2 routes: film list, film details
+  - Navigation via routerLink
+  - Unknown route handling (wildcard)
+- Applied to the search field
+  - Search by title works
+  - Search string — signal()
