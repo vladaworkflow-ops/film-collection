@@ -1,0 +1,61 @@
+.film-search {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #1e1e2f;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-family: system-ui, sans-serif;
+}
+
+.film-search-label {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.film-search-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.film-search-input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  outline: none;
+  background: #2a2a40;
+  color: #fff;
+  transition: 0.2s ease;
+}
+
+.film-search-input:focus {
+  border-color: #6c63ff;
+  background: #2f2f4a;
+}
+
+.film-search-button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #6c63ff;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-weight: 500;
+}
+
+.film-search-button:hover {
+  background: #574fd6;
+}
+
+.film-search-button:active {
+  transform: scale(0.96);
+}
+
+.film-search-result {
+  font-size: 13px;
+  opacity: 0.85;
+}
