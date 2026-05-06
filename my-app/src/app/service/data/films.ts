@@ -1,4 +1,4 @@
-type Film = {
+export type Film = {
   id: number;
   title: string;
   year: number;
@@ -144,3 +144,8 @@ export const films:Film[] = [
     "isFavorite": false
   }
 ]
+
+/* export function getFilms(): Film[]{
+  return films;
+} */
+
